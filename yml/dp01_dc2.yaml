@@ -9572,4 +9572,4 @@ tables:
     and the best matches to the object table. (30 columns)
   name: truth_match
   tap:table_index: 2
-tap:schema_index: 3
+tap:schema_index: 2

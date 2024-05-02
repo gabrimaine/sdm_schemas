@@ -1,0 +1,1910 @@
+'@id': '#skysim5000_v1_1_1_parquet'
+name: skysim5000_v1_1_1_parquet
+tables:
+- '@id': '#position'
+  columns:
+  - '@id': '#position.galaxy_id'
+    datatype: long
+    description: galaxy_id column
+    mysql:datatype: bigint(20)
+    name: galaxy_id
+    tap:principal: 1
+  - '@id': '#position.halo_id'
+    datatype: long
+    description: halo_id column
+    mysql:datatype: bigint(20)
+    name: halo_id
+    tap:principal: 0
+  - '@id': '#position.coord_ra'
+    datatype: double
+    description: coord_ra column
+    mysql:datatype: DOUBLE
+    name: coord_ra
+    tap:principal: 0
+  - '@id': '#position.coord_dec'
+    datatype: double
+    description: coord_dec column
+    mysql:datatype: DOUBLE
+    name: coord_dec
+    tap:principal: 0
+  - '@id': '#position.chunkId'
+    datatype: int
+    description: chunkId column
+    mysql:datatype: int(11)
+    name: chunkId
+    tap:principal: 0
+  - '@id': '#position.subChunkId'
+    datatype: int
+    description: subChunkId column
+    mysql:datatype: int(11)
+    name: subChunkId
+    tap:principal: 0
+  description: position table
+  name: position
+  tap:table_index: 1
+- '@id': '#data'
+  columns:
+  - '@id': '#data.galaxy_id'
+    datatype: long
+    description: galaxy_id column
+    mysql:datatype: bigint(20)
+    name: galaxy_id
+    tap:principal: 1
+  - '@id': '#data.halo_id'
+    datatype: long
+    description: halo_id column
+    mysql:datatype: bigint(20)
+    name: halo_id
+    tap:principal: 0
+  - '@id': '#data.coord_ra'
+    datatype: double
+    description: coord_ra column
+    mysql:datatype: DOUBLE
+    name: coord_ra
+    tap:principal: 0
+  - '@id': '#data.coord_dec'
+    datatype: double
+    description: coord_dec column
+    mysql:datatype: DOUBLE
+    name: coord_dec
+    tap:principal: 0
+  - '@id': '#data.A_v'
+    datatype: float
+    description: A_v column
+    mysql:datatype: FLOAT
+    name: A_v
+    tap:principal: 0
+  - '@id': '#data.A_v_bulge'
+    datatype: float
+    description: A_v_bulge column
+    mysql:datatype: FLOAT
+    name: A_v_bulge
+    tap:principal: 0
+  - '@id': '#data.A_v_disk'
+    datatype: float
+    description: A_v_disk column
+    mysql:datatype: FLOAT
+    name: A_v_disk
+    tap:principal: 0
+  - '@id': '#data.Mag_true_g_lsst_z0'
+    datatype: float
+    description: Mag_true_g_lsst_z0 column
+    mysql:datatype: FLOAT
+    name: Mag_true_g_lsst_z0
+    tap:principal: 0
+  - '@id': '#data.Mag_true_g_lsst_z0_no_host_extinction'
+    datatype: float
+    description: Mag_true_g_lsst_z0_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: Mag_true_g_lsst_z0_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.Mag_true_g_sdss_z0'
+    datatype: float
+    description: Mag_true_g_sdss_z0 column
+    mysql:datatype: FLOAT
+    name: Mag_true_g_sdss_z0
+    tap:principal: 0
+  - '@id': '#data.Mag_true_g_sdss_z0_no_host_extinction'
+    datatype: float
+    description: Mag_true_g_sdss_z0_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: Mag_true_g_sdss_z0_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.Mag_true_i_lsst_z0'
+    datatype: float
+    description: Mag_true_i_lsst_z0 column
+    mysql:datatype: FLOAT
+    name: Mag_true_i_lsst_z0
+    tap:principal: 0
+  - '@id': '#data.Mag_true_i_lsst_z0_no_host_extinction'
+    datatype: float
+    description: Mag_true_i_lsst_z0_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: Mag_true_i_lsst_z0_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.Mag_true_i_sdss_z0'
+    datatype: float
+    description: Mag_true_i_sdss_z0 column
+    mysql:datatype: FLOAT
+    name: Mag_true_i_sdss_z0
+    tap:principal: 0
+  - '@id': '#data.Mag_true_i_sdss_z0_no_host_extinction'
+    datatype: float
+    description: Mag_true_i_sdss_z0_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: Mag_true_i_sdss_z0_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.Mag_true_r_lsst_z0'
+    datatype: float
+    description: Mag_true_r_lsst_z0 column
+    mysql:datatype: FLOAT
+    name: Mag_true_r_lsst_z0
+    tap:principal: 0
+  - '@id': '#data.Mag_true_r_lsst_z0_no_host_extinction'
+    datatype: float
+    description: Mag_true_r_lsst_z0_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: Mag_true_r_lsst_z0_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.Mag_true_r_sdss_z0'
+    datatype: float
+    description: Mag_true_r_sdss_z0 column
+    mysql:datatype: FLOAT
+    name: Mag_true_r_sdss_z0
+    tap:principal: 0
+  - '@id': '#data.Mag_true_r_sdss_z0_no_host_extinction'
+    datatype: float
+    description: Mag_true_r_sdss_z0_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: Mag_true_r_sdss_z0_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.Mag_true_u_lsst_z0'
+    datatype: float
+    description: Mag_true_u_lsst_z0 column
+    mysql:datatype: FLOAT
+    name: Mag_true_u_lsst_z0
+    tap:principal: 0
+  - '@id': '#data.Mag_true_u_lsst_z0_no_host_extinction'
+    datatype: float
+    description: Mag_true_u_lsst_z0_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: Mag_true_u_lsst_z0_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.Mag_true_u_sdss_z0'
+    datatype: float
+    description: Mag_true_u_sdss_z0 column
+    mysql:datatype: FLOAT
+    name: Mag_true_u_sdss_z0
+    tap:principal: 0
+  - '@id': '#data.Mag_true_u_sdss_z0_no_host_extinction'
+    datatype: float
+    description: Mag_true_u_sdss_z0_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: Mag_true_u_sdss_z0_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.Mag_true_y_lsst_z0'
+    datatype: float
+    description: Mag_true_y_lsst_z0 column
+    mysql:datatype: FLOAT
+    name: Mag_true_y_lsst_z0
+    tap:principal: 0
+  - '@id': '#data.Mag_true_y_lsst_z0_no_host_extinction'
+    datatype: float
+    description: Mag_true_y_lsst_z0_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: Mag_true_y_lsst_z0_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.Mag_true_z_lsst_z0'
+    datatype: float
+    description: Mag_true_z_lsst_z0 column
+    mysql:datatype: FLOAT
+    name: Mag_true_z_lsst_z0
+    tap:principal: 0
+  - '@id': '#data.Mag_true_z_lsst_z0_no_host_extinction'
+    datatype: float
+    description: Mag_true_z_lsst_z0_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: Mag_true_z_lsst_z0_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.Mag_true_z_sdss_z0'
+    datatype: float
+    description: Mag_true_z_sdss_z0 column
+    mysql:datatype: FLOAT
+    name: Mag_true_z_sdss_z0
+    tap:principal: 0
+  - '@id': '#data.Mag_true_z_sdss_z0_no_host_extinction'
+    datatype: float
+    description: Mag_true_z_sdss_z0_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: Mag_true_z_sdss_z0_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.R_v'
+    datatype: float
+    description: R_v column
+    mysql:datatype: FLOAT
+    name: R_v
+    tap:principal: 0
+  - '@id': '#data.R_v_bulge'
+    datatype: float
+    description: R_v_bulge column
+    mysql:datatype: FLOAT
+    name: R_v_bulge
+    tap:principal: 0
+  - '@id': '#data.R_v_disk'
+    datatype: float
+    description: R_v_disk column
+    mysql:datatype: FLOAT
+    name: R_v_disk
+    tap:principal: 0
+  - '@id': '#data.bulge_to_total_ratio_i'
+    datatype: float
+    description: bulge_to_total_ratio_i column
+    mysql:datatype: FLOAT
+    name: bulge_to_total_ratio_i
+    tap:principal: 0
+  - '@id': '#data.convergence'
+    datatype: double
+    description: convergence column
+    mysql:datatype: DOUBLE
+    name: convergence
+    tap:principal: 0
+  - '@id': '#data.dec_true'
+    datatype: double
+    description: dec_true column
+    mysql:datatype: DOUBLE
+    name: dec_true
+    tap:principal: 0
+  - '@id': '#data.ellipticity_1_bulge_true'
+    datatype: double
+    description: ellipticity_1_bulge_true column
+    mysql:datatype: DOUBLE
+    name: ellipticity_1_bulge_true
+    tap:principal: 0
+  - '@id': '#data.ellipticity_1_disk_true'
+    datatype: double
+    description: ellipticity_1_disk_true column
+    mysql:datatype: DOUBLE
+    name: ellipticity_1_disk_true
+    tap:principal: 0
+  - '@id': '#data.ellipticity_1_true'
+    datatype: double
+    description: ellipticity_1_true column
+    mysql:datatype: DOUBLE
+    name: ellipticity_1_true
+    tap:principal: 0
+  - '@id': '#data.ellipticity_2_bulge_true'
+    datatype: double
+    description: ellipticity_2_bulge_true column
+    mysql:datatype: DOUBLE
+    name: ellipticity_2_bulge_true
+    tap:principal: 0
+  - '@id': '#data.ellipticity_2_disk_true'
+    datatype: double
+    description: ellipticity_2_disk_true column
+    mysql:datatype: DOUBLE
+    name: ellipticity_2_disk_true
+    tap:principal: 0
+  - '@id': '#data.ellipticity_2_true'
+    datatype: double
+    description: ellipticity_2_true column
+    mysql:datatype: DOUBLE
+    name: ellipticity_2_true
+    tap:principal: 0
+  - '@id': '#data.ellipticity_bulge_true'
+    datatype: float
+    description: ellipticity_bulge_true column
+    mysql:datatype: FLOAT
+    name: ellipticity_bulge_true
+    tap:principal: 0
+  - '@id': '#data.ellipticity_disk_true'
+    datatype: float
+    description: ellipticity_disk_true column
+    mysql:datatype: FLOAT
+    name: ellipticity_disk_true
+    tap:principal: 0
+  - '@id': '#data.ellipticity_true'
+    datatype: float
+    description: ellipticity_true column
+    mysql:datatype: FLOAT
+    name: ellipticity_true
+    tap:principal: 0
+  - '@id': '#data.halo_mass'
+    datatype: double
+    description: halo_mass column
+    mysql:datatype: DOUBLE
+    name: halo_mass
+    tap:principal: 0
+  - '@id': '#data.is_central'
+    datatype: boolean
+    description: is_central column
+    mysql:datatype: BOOLEAN
+    name: is_central
+    tap:principal: 0
+  - '@id': '#data.mag_g'
+    datatype: double
+    description: mag_g column
+    mysql:datatype: DOUBLE
+    name: mag_g
+    tap:principal: 0
+  - '@id': '#data.mag_g_lsst'
+    datatype: double
+    description: mag_g_lsst column
+    mysql:datatype: DOUBLE
+    name: mag_g_lsst
+    tap:principal: 0
+  - '@id': '#data.mag_g_lsst_no_host_extinction'
+    datatype: double
+    description: mag_g_lsst_no_host_extinction column
+    mysql:datatype: DOUBLE
+    name: mag_g_lsst_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.mag_g_sdss'
+    datatype: double
+    description: mag_g_sdss column
+    mysql:datatype: DOUBLE
+    name: mag_g_sdss
+    tap:principal: 0
+  - '@id': '#data.mag_g_sdss_no_host_extinction'
+    datatype: double
+    description: mag_g_sdss_no_host_extinction column
+    mysql:datatype: DOUBLE
+    name: mag_g_sdss_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.mag_i'
+    datatype: double
+    description: mag_i column
+    mysql:datatype: DOUBLE
+    name: mag_i
+    tap:principal: 0
+  - '@id': '#data.mag_i_lsst'
+    datatype: double
+    description: mag_i_lsst column
+    mysql:datatype: DOUBLE
+    name: mag_i_lsst
+    tap:principal: 0
+  - '@id': '#data.mag_i_lsst_no_host_extinction'
+    datatype: double
+    description: mag_i_lsst_no_host_extinction column
+    mysql:datatype: DOUBLE
+    name: mag_i_lsst_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.mag_i_sdss'
+    datatype: double
+    description: mag_i_sdss column
+    mysql:datatype: DOUBLE
+    name: mag_i_sdss
+    tap:principal: 0
+  - '@id': '#data.mag_i_sdss_no_host_extinction'
+    datatype: double
+    description: mag_i_sdss_no_host_extinction column
+    mysql:datatype: DOUBLE
+    name: mag_i_sdss_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.mag_r'
+    datatype: double
+    description: mag_r column
+    mysql:datatype: DOUBLE
+    name: mag_r
+    tap:principal: 0
+  - '@id': '#data.mag_r_lsst'
+    datatype: double
+    description: mag_r_lsst column
+    mysql:datatype: DOUBLE
+    name: mag_r_lsst
+    tap:principal: 0
+  - '@id': '#data.mag_r_lsst_no_host_extinction'
+    datatype: double
+    description: mag_r_lsst_no_host_extinction column
+    mysql:datatype: DOUBLE
+    name: mag_r_lsst_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.mag_r_sdss'
+    datatype: double
+    description: mag_r_sdss column
+    mysql:datatype: DOUBLE
+    name: mag_r_sdss
+    tap:principal: 0
+  - '@id': '#data.mag_r_sdss_no_host_extinction'
+    datatype: double
+    description: mag_r_sdss_no_host_extinction column
+    mysql:datatype: DOUBLE
+    name: mag_r_sdss_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.mag_true_g'
+    datatype: float
+    description: mag_true_g column
+    mysql:datatype: FLOAT
+    name: mag_true_g
+    tap:principal: 0
+  - '@id': '#data.mag_true_g_lsst'
+    datatype: float
+    description: mag_true_g_lsst column
+    mysql:datatype: FLOAT
+    name: mag_true_g_lsst
+    tap:principal: 0
+  - '@id': '#data.mag_true_g_lsst_no_host_extinction'
+    datatype: float
+    description: mag_true_g_lsst_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: mag_true_g_lsst_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.mag_true_g_sdss'
+    datatype: float
+    description: mag_true_g_sdss column
+    mysql:datatype: FLOAT
+    name: mag_true_g_sdss
+    tap:principal: 0
+  - '@id': '#data.mag_true_g_sdss_no_host_extinction'
+    datatype: float
+    description: mag_true_g_sdss_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: mag_true_g_sdss_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.mag_true_i'
+    datatype: float
+    description: mag_true_i column
+    mysql:datatype: FLOAT
+    name: mag_true_i
+    tap:principal: 0
+  - '@id': '#data.mag_true_i_lsst'
+    datatype: float
+    description: mag_true_i_lsst column
+    mysql:datatype: FLOAT
+    name: mag_true_i_lsst
+    tap:principal: 0
+  - '@id': '#data.mag_true_i_lsst_no_host_extinction'
+    datatype: float
+    description: mag_true_i_lsst_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: mag_true_i_lsst_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.mag_true_i_sdss'
+    datatype: float
+    description: mag_true_i_sdss column
+    mysql:datatype: FLOAT
+    name: mag_true_i_sdss
+    tap:principal: 0
+  - '@id': '#data.mag_true_i_sdss_no_host_extinction'
+    datatype: float
+    description: mag_true_i_sdss_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: mag_true_i_sdss_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.mag_true_r'
+    datatype: float
+    description: mag_true_r column
+    mysql:datatype: FLOAT
+    name: mag_true_r
+    tap:principal: 0
+  - '@id': '#data.mag_true_r_lsst'
+    datatype: float
+    description: mag_true_r_lsst column
+    mysql:datatype: FLOAT
+    name: mag_true_r_lsst
+    tap:principal: 0
+  - '@id': '#data.mag_true_r_lsst_no_host_extinction'
+    datatype: float
+    description: mag_true_r_lsst_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: mag_true_r_lsst_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.mag_true_r_sdss'
+    datatype: float
+    description: mag_true_r_sdss column
+    mysql:datatype: FLOAT
+    name: mag_true_r_sdss
+    tap:principal: 0
+  - '@id': '#data.mag_true_r_sdss_no_host_extinction'
+    datatype: float
+    description: mag_true_r_sdss_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: mag_true_r_sdss_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.mag_true_u'
+    datatype: float
+    description: mag_true_u column
+    mysql:datatype: FLOAT
+    name: mag_true_u
+    tap:principal: 0
+  - '@id': '#data.mag_true_u_lsst'
+    datatype: float
+    description: mag_true_u_lsst column
+    mysql:datatype: FLOAT
+    name: mag_true_u_lsst
+    tap:principal: 0
+  - '@id': '#data.mag_true_u_lsst_no_host_extinction'
+    datatype: float
+    description: mag_true_u_lsst_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: mag_true_u_lsst_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.mag_true_u_sdss'
+    datatype: float
+    description: mag_true_u_sdss column
+    mysql:datatype: FLOAT
+    name: mag_true_u_sdss
+    tap:principal: 0
+  - '@id': '#data.mag_true_u_sdss_no_host_extinction'
+    datatype: float
+    description: mag_true_u_sdss_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: mag_true_u_sdss_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.mag_true_y'
+    datatype: float
+    description: mag_true_y column
+    mysql:datatype: FLOAT
+    name: mag_true_y
+    tap:principal: 0
+  - '@id': '#data.mag_true_y_lsst'
+    datatype: float
+    description: mag_true_y_lsst column
+    mysql:datatype: FLOAT
+    name: mag_true_y_lsst
+    tap:principal: 0
+  - '@id': '#data.mag_true_y_lsst_no_host_extinction'
+    datatype: float
+    description: mag_true_y_lsst_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: mag_true_y_lsst_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.mag_true_z'
+    datatype: float
+    description: mag_true_z column
+    mysql:datatype: FLOAT
+    name: mag_true_z
+    tap:principal: 0
+  - '@id': '#data.mag_true_z_lsst'
+    datatype: float
+    description: mag_true_z_lsst column
+    mysql:datatype: FLOAT
+    name: mag_true_z_lsst
+    tap:principal: 0
+  - '@id': '#data.mag_true_z_lsst_no_host_extinction'
+    datatype: float
+    description: mag_true_z_lsst_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: mag_true_z_lsst_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.mag_true_z_sdss'
+    datatype: float
+    description: mag_true_z_sdss column
+    mysql:datatype: FLOAT
+    name: mag_true_z_sdss
+    tap:principal: 0
+  - '@id': '#data.mag_true_z_sdss_no_host_extinction'
+    datatype: float
+    description: mag_true_z_sdss_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: mag_true_z_sdss_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.mag_u'
+    datatype: double
+    description: mag_u column
+    mysql:datatype: DOUBLE
+    name: mag_u
+    tap:principal: 0
+  - '@id': '#data.mag_u_lsst'
+    datatype: double
+    description: mag_u_lsst column
+    mysql:datatype: DOUBLE
+    name: mag_u_lsst
+    tap:principal: 0
+  - '@id': '#data.mag_u_lsst_no_host_extinction'
+    datatype: double
+    description: mag_u_lsst_no_host_extinction column
+    mysql:datatype: DOUBLE
+    name: mag_u_lsst_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.mag_u_sdss'
+    datatype: double
+    description: mag_u_sdss column
+    mysql:datatype: DOUBLE
+    name: mag_u_sdss
+    tap:principal: 0
+  - '@id': '#data.mag_u_sdss_no_host_extinction'
+    datatype: double
+    description: mag_u_sdss_no_host_extinction column
+    mysql:datatype: DOUBLE
+    name: mag_u_sdss_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.mag_y'
+    datatype: double
+    description: mag_y column
+    mysql:datatype: DOUBLE
+    name: mag_y
+    tap:principal: 0
+  - '@id': '#data.mag_y_lsst'
+    datatype: double
+    description: mag_y_lsst column
+    mysql:datatype: DOUBLE
+    name: mag_y_lsst
+    tap:principal: 0
+  - '@id': '#data.mag_y_lsst_no_host_extinction'
+    datatype: double
+    description: mag_y_lsst_no_host_extinction column
+    mysql:datatype: DOUBLE
+    name: mag_y_lsst_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.mag_z'
+    datatype: double
+    description: mag_z column
+    mysql:datatype: DOUBLE
+    name: mag_z
+    tap:principal: 0
+  - '@id': '#data.mag_z_lsst'
+    datatype: double
+    description: mag_z_lsst column
+    mysql:datatype: DOUBLE
+    name: mag_z_lsst
+    tap:principal: 0
+  - '@id': '#data.mag_z_lsst_no_host_extinction'
+    datatype: double
+    description: mag_z_lsst_no_host_extinction column
+    mysql:datatype: DOUBLE
+    name: mag_z_lsst_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.mag_z_sdss'
+    datatype: double
+    description: mag_z_sdss column
+    mysql:datatype: DOUBLE
+    name: mag_z_sdss
+    tap:principal: 0
+  - '@id': '#data.mag_z_sdss_no_host_extinction'
+    datatype: double
+    description: mag_z_sdss_no_host_extinction column
+    mysql:datatype: DOUBLE
+    name: mag_z_sdss_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.magnification'
+    datatype: double
+    description: magnification column
+    mysql:datatype: DOUBLE
+    name: magnification
+    tap:principal: 0
+  - '@id': '#data.position_angle_true'
+    datatype: double
+    description: position_angle_true column
+    mysql:datatype: DOUBLE
+    name: position_angle_true
+    tap:principal: 0
+  - '@id': '#data.position_x'
+    datatype: double
+    description: position_x column
+    mysql:datatype: DOUBLE
+    name: position_x
+    tap:principal: 0
+  - '@id': '#data.position_y'
+    datatype: double
+    description: position_y column
+    mysql:datatype: DOUBLE
+    name: position_y
+    tap:principal: 0
+  - '@id': '#data.position_z'
+    datatype: double
+    description: position_z column
+    mysql:datatype: DOUBLE
+    name: position_z
+    tap:principal: 0
+  - '@id': '#data.ra_true'
+    datatype: double
+    description: ra_true column
+    mysql:datatype: DOUBLE
+    name: ra_true
+    tap:principal: 0
+  - '@id': '#data.redshift'
+    datatype: double
+    description: redshift column
+    mysql:datatype: DOUBLE
+    name: redshift
+    tap:principal: 0
+  - '@id': '#data.redshift_true'
+    datatype: double
+    description: redshift_true column
+    mysql:datatype: DOUBLE
+    name: redshift_true
+    tap:principal: 0
+  - '@id': '#data.sed_1000_246'
+    datatype: float
+    description: sed_1000_246 column
+    mysql:datatype: FLOAT
+    name: sed_1000_246
+    tap:principal: 0
+  - '@id': '#data.sed_1000_246_bulge'
+    datatype: float
+    description: sed_1000_246_bulge column
+    mysql:datatype: FLOAT
+    name: sed_1000_246_bulge
+    tap:principal: 0
+  - '@id': '#data.sed_1000_246_bulge_no_host_extinction'
+    datatype: float
+    description: sed_1000_246_bulge_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_1000_246_bulge_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_1000_246_disk'
+    datatype: float
+    description: sed_1000_246_disk column
+    mysql:datatype: FLOAT
+    name: sed_1000_246_disk
+    tap:principal: 0
+  - '@id': '#data.sed_1000_246_disk_no_host_extinction'
+    datatype: float
+    description: sed_1000_246_disk_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_1000_246_disk_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_1000_246_no_host_extinction'
+    datatype: float
+    description: sed_1000_246_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_1000_246_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_11467_1710'
+    datatype: float
+    description: sed_11467_1710 column
+    mysql:datatype: FLOAT
+    name: sed_11467_1710
+    tap:principal: 0
+  - '@id': '#data.sed_11467_1710_bulge'
+    datatype: float
+    description: sed_11467_1710_bulge column
+    mysql:datatype: FLOAT
+    name: sed_11467_1710_bulge
+    tap:principal: 0
+  - '@id': '#data.sed_11467_1710_bulge_no_host_extinction'
+    datatype: float
+    description: sed_11467_1710_bulge_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_11467_1710_bulge_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_11467_1710_disk'
+    datatype: float
+    description: sed_11467_1710_disk column
+    mysql:datatype: FLOAT
+    name: sed_11467_1710_disk
+    tap:principal: 0
+  - '@id': '#data.sed_11467_1710_disk_no_host_extinction'
+    datatype: float
+    description: sed_11467_1710_disk_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_11467_1710_disk_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_11467_1710_no_host_extinction'
+    datatype: float
+    description: sed_11467_1710_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_11467_1710_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_1246_306'
+    datatype: float
+    description: sed_1246_306 column
+    mysql:datatype: FLOAT
+    name: sed_1246_306
+    tap:principal: 0
+  - '@id': '#data.sed_1246_306_bulge'
+    datatype: float
+    description: sed_1246_306_bulge column
+    mysql:datatype: FLOAT
+    name: sed_1246_306_bulge
+    tap:principal: 0
+  - '@id': '#data.sed_1246_306_bulge_no_host_extinction'
+    datatype: float
+    description: sed_1246_306_bulge_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_1246_306_bulge_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_1246_306_disk'
+    datatype: float
+    description: sed_1246_306_disk column
+    mysql:datatype: FLOAT
+    name: sed_1246_306_disk
+    tap:principal: 0
+  - '@id': '#data.sed_1246_306_disk_no_host_extinction'
+    datatype: float
+    description: sed_1246_306_disk_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_1246_306_disk_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_1246_306_no_host_extinction'
+    datatype: float
+    description: sed_1246_306_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_1246_306_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_13177_1966'
+    datatype: float
+    description: sed_13177_1966 column
+    mysql:datatype: FLOAT
+    name: sed_13177_1966
+    tap:principal: 0
+  - '@id': '#data.sed_13177_1966_bulge'
+    datatype: float
+    description: sed_13177_1966_bulge column
+    mysql:datatype: FLOAT
+    name: sed_13177_1966_bulge
+    tap:principal: 0
+  - '@id': '#data.sed_13177_1966_bulge_no_host_extinction'
+    datatype: float
+    description: sed_13177_1966_bulge_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_13177_1966_bulge_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_13177_1966_disk'
+    datatype: float
+    description: sed_13177_1966_disk column
+    mysql:datatype: FLOAT
+    name: sed_13177_1966_disk
+    tap:principal: 0
+  - '@id': '#data.sed_13177_1966_disk_no_host_extinction'
+    datatype: float
+    description: sed_13177_1966_disk_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_13177_1966_disk_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_13177_1966_no_host_extinction'
+    datatype: float
+    description: sed_13177_1966_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_13177_1966_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_15143_2259'
+    datatype: float
+    description: sed_15143_2259 column
+    mysql:datatype: FLOAT
+    name: sed_15143_2259
+    tap:principal: 0
+  - '@id': '#data.sed_15143_2259_bulge'
+    datatype: float
+    description: sed_15143_2259_bulge column
+    mysql:datatype: FLOAT
+    name: sed_15143_2259_bulge
+    tap:principal: 0
+  - '@id': '#data.sed_15143_2259_bulge_no_host_extinction'
+    datatype: float
+    description: sed_15143_2259_bulge_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_15143_2259_bulge_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_15143_2259_disk'
+    datatype: float
+    description: sed_15143_2259_disk column
+    mysql:datatype: FLOAT
+    name: sed_15143_2259_disk
+    tap:principal: 0
+  - '@id': '#data.sed_15143_2259_disk_no_host_extinction'
+    datatype: float
+    description: sed_15143_2259_disk_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_15143_2259_disk_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_15143_2259_no_host_extinction'
+    datatype: float
+    description: sed_15143_2259_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_15143_2259_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_1552_381'
+    datatype: float
+    description: sed_1552_381 column
+    mysql:datatype: FLOAT
+    name: sed_1552_381
+    tap:principal: 0
+  - '@id': '#data.sed_1552_381_bulge'
+    datatype: float
+    description: sed_1552_381_bulge column
+    mysql:datatype: FLOAT
+    name: sed_1552_381_bulge
+    tap:principal: 0
+  - '@id': '#data.sed_1552_381_bulge_no_host_extinction'
+    datatype: float
+    description: sed_1552_381_bulge_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_1552_381_bulge_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_1552_381_disk'
+    datatype: float
+    description: sed_1552_381_disk column
+    mysql:datatype: FLOAT
+    name: sed_1552_381_disk
+    tap:principal: 0
+  - '@id': '#data.sed_1552_381_disk_no_host_extinction'
+    datatype: float
+    description: sed_1552_381_disk_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_1552_381_disk_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_1552_381_no_host_extinction'
+    datatype: float
+    description: sed_1552_381_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_1552_381_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_17402_2596'
+    datatype: float
+    description: sed_17402_2596 column
+    mysql:datatype: FLOAT
+    name: sed_17402_2596
+    tap:principal: 0
+  - '@id': '#data.sed_17402_2596_bulge'
+    datatype: float
+    description: sed_17402_2596_bulge column
+    mysql:datatype: FLOAT
+    name: sed_17402_2596_bulge
+    tap:principal: 0
+  - '@id': '#data.sed_17402_2596_bulge_no_host_extinction'
+    datatype: float
+    description: sed_17402_2596_bulge_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_17402_2596_bulge_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_17402_2596_disk'
+    datatype: float
+    description: sed_17402_2596_disk column
+    mysql:datatype: FLOAT
+    name: sed_17402_2596_disk
+    tap:principal: 0
+  - '@id': '#data.sed_17402_2596_disk_no_host_extinction'
+    datatype: float
+    description: sed_17402_2596_disk_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_17402_2596_disk_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_17402_2596_no_host_extinction'
+    datatype: float
+    description: sed_17402_2596_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_17402_2596_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_1933_474'
+    datatype: float
+    description: sed_1933_474 column
+    mysql:datatype: FLOAT
+    name: sed_1933_474
+    tap:principal: 0
+  - '@id': '#data.sed_1933_474_bulge'
+    datatype: float
+    description: sed_1933_474_bulge column
+    mysql:datatype: FLOAT
+    name: sed_1933_474_bulge
+    tap:principal: 0
+  - '@id': '#data.sed_1933_474_bulge_no_host_extinction'
+    datatype: float
+    description: sed_1933_474_bulge_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_1933_474_bulge_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_1933_474_disk'
+    datatype: float
+    description: sed_1933_474_disk column
+    mysql:datatype: FLOAT
+    name: sed_1933_474_disk
+    tap:principal: 0
+  - '@id': '#data.sed_1933_474_disk_no_host_extinction'
+    datatype: float
+    description: sed_1933_474_disk_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_1933_474_disk_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_1933_474_no_host_extinction'
+    datatype: float
+    description: sed_1933_474_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_1933_474_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_2407_591'
+    datatype: float
+    description: sed_2407_591 column
+    mysql:datatype: FLOAT
+    name: sed_2407_591
+    tap:principal: 0
+  - '@id': '#data.sed_2407_591_bulge'
+    datatype: float
+    description: sed_2407_591_bulge column
+    mysql:datatype: FLOAT
+    name: sed_2407_591_bulge
+    tap:principal: 0
+  - '@id': '#data.sed_2407_591_bulge_no_host_extinction'
+    datatype: float
+    description: sed_2407_591_bulge_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_2407_591_bulge_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_2407_591_disk'
+    datatype: float
+    description: sed_2407_591_disk column
+    mysql:datatype: FLOAT
+    name: sed_2407_591_disk
+    tap:principal: 0
+  - '@id': '#data.sed_2407_591_disk_no_host_extinction'
+    datatype: float
+    description: sed_2407_591_disk_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_2407_591_disk_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_2407_591_no_host_extinction'
+    datatype: float
+    description: sed_2407_591_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_2407_591_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_2998_186'
+    datatype: float
+    description: sed_2998_186 column
+    mysql:datatype: FLOAT
+    name: sed_2998_186
+    tap:principal: 0
+  - '@id': '#data.sed_2998_186_bulge'
+    datatype: float
+    description: sed_2998_186_bulge column
+    mysql:datatype: FLOAT
+    name: sed_2998_186_bulge
+    tap:principal: 0
+  - '@id': '#data.sed_2998_186_bulge_no_host_extinction'
+    datatype: float
+    description: sed_2998_186_bulge_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_2998_186_bulge_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_2998_186_disk'
+    datatype: float
+    description: sed_2998_186_disk column
+    mysql:datatype: FLOAT
+    name: sed_2998_186_disk
+    tap:principal: 0
+  - '@id': '#data.sed_2998_186_disk_no_host_extinction'
+    datatype: float
+    description: sed_2998_186_disk_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_2998_186_disk_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_2998_186_no_host_extinction'
+    datatype: float
+    description: sed_2998_186_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_2998_186_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_3184_197'
+    datatype: float
+    description: sed_3184_197 column
+    mysql:datatype: FLOAT
+    name: sed_3184_197
+    tap:principal: 0
+  - '@id': '#data.sed_3184_197_bulge'
+    datatype: float
+    description: sed_3184_197_bulge column
+    mysql:datatype: FLOAT
+    name: sed_3184_197_bulge
+    tap:principal: 0
+  - '@id': '#data.sed_3184_197_bulge_no_host_extinction'
+    datatype: float
+    description: sed_3184_197_bulge_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_3184_197_bulge_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_3184_197_disk'
+    datatype: float
+    description: sed_3184_197_disk column
+    mysql:datatype: FLOAT
+    name: sed_3184_197_disk
+    tap:principal: 0
+  - '@id': '#data.sed_3184_197_disk_no_host_extinction'
+    datatype: float
+    description: sed_3184_197_disk_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_3184_197_disk_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_3184_197_no_host_extinction'
+    datatype: float
+    description: sed_3184_197_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_3184_197_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_3381_209'
+    datatype: float
+    description: sed_3381_209 column
+    mysql:datatype: FLOAT
+    name: sed_3381_209
+    tap:principal: 0
+  - '@id': '#data.sed_3381_209_bulge'
+    datatype: float
+    description: sed_3381_209_bulge column
+    mysql:datatype: FLOAT
+    name: sed_3381_209_bulge
+    tap:principal: 0
+  - '@id': '#data.sed_3381_209_bulge_no_host_extinction'
+    datatype: float
+    description: sed_3381_209_bulge_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_3381_209_bulge_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_3381_209_disk'
+    datatype: float
+    description: sed_3381_209_disk column
+    mysql:datatype: FLOAT
+    name: sed_3381_209_disk
+    tap:principal: 0
+  - '@id': '#data.sed_3381_209_disk_no_host_extinction'
+    datatype: float
+    description: sed_3381_209_disk_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_3381_209_disk_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_3381_209_no_host_extinction'
+    datatype: float
+    description: sed_3381_209_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_3381_209_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_3590_222'
+    datatype: float
+    description: sed_3590_222 column
+    mysql:datatype: FLOAT
+    name: sed_3590_222
+    tap:principal: 0
+  - '@id': '#data.sed_3590_222_bulge'
+    datatype: float
+    description: sed_3590_222_bulge column
+    mysql:datatype: FLOAT
+    name: sed_3590_222_bulge
+    tap:principal: 0
+  - '@id': '#data.sed_3590_222_bulge_no_host_extinction'
+    datatype: float
+    description: sed_3590_222_bulge_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_3590_222_bulge_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_3590_222_disk'
+    datatype: float
+    description: sed_3590_222_disk column
+    mysql:datatype: FLOAT
+    name: sed_3590_222_disk
+    tap:principal: 0
+  - '@id': '#data.sed_3590_222_disk_no_host_extinction'
+    datatype: float
+    description: sed_3590_222_disk_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_3590_222_disk_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_3590_222_no_host_extinction'
+    datatype: float
+    description: sed_3590_222_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_3590_222_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_3812_236'
+    datatype: float
+    description: sed_3812_236 column
+    mysql:datatype: FLOAT
+    name: sed_3812_236
+    tap:principal: 0
+  - '@id': '#data.sed_3812_236_bulge'
+    datatype: float
+    description: sed_3812_236_bulge column
+    mysql:datatype: FLOAT
+    name: sed_3812_236_bulge
+    tap:principal: 0
+  - '@id': '#data.sed_3812_236_bulge_no_host_extinction'
+    datatype: float
+    description: sed_3812_236_bulge_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_3812_236_bulge_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_3812_236_disk'
+    datatype: float
+    description: sed_3812_236_disk column
+    mysql:datatype: FLOAT
+    name: sed_3812_236_disk
+    tap:principal: 0
+  - '@id': '#data.sed_3812_236_disk_no_host_extinction'
+    datatype: float
+    description: sed_3812_236_disk_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_3812_236_disk_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_3812_236_no_host_extinction'
+    datatype: float
+    description: sed_3812_236_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_3812_236_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_4048_251'
+    datatype: float
+    description: sed_4048_251 column
+    mysql:datatype: FLOAT
+    name: sed_4048_251
+    tap:principal: 0
+  - '@id': '#data.sed_4048_251_bulge'
+    datatype: float
+    description: sed_4048_251_bulge column
+    mysql:datatype: FLOAT
+    name: sed_4048_251_bulge
+    tap:principal: 0
+  - '@id': '#data.sed_4048_251_bulge_no_host_extinction'
+    datatype: float
+    description: sed_4048_251_bulge_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_4048_251_bulge_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_4048_251_disk'
+    datatype: float
+    description: sed_4048_251_disk column
+    mysql:datatype: FLOAT
+    name: sed_4048_251_disk
+    tap:principal: 0
+  - '@id': '#data.sed_4048_251_disk_no_host_extinction'
+    datatype: float
+    description: sed_4048_251_disk_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_4048_251_disk_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_4048_251_no_host_extinction'
+    datatype: float
+    description: sed_4048_251_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_4048_251_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_4299_266'
+    datatype: float
+    description: sed_4299_266 column
+    mysql:datatype: FLOAT
+    name: sed_4299_266
+    tap:principal: 0
+  - '@id': '#data.sed_4299_266_bulge'
+    datatype: float
+    description: sed_4299_266_bulge column
+    mysql:datatype: FLOAT
+    name: sed_4299_266_bulge
+    tap:principal: 0
+  - '@id': '#data.sed_4299_266_bulge_no_host_extinction'
+    datatype: float
+    description: sed_4299_266_bulge_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_4299_266_bulge_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_4299_266_disk'
+    datatype: float
+    description: sed_4299_266_disk column
+    mysql:datatype: FLOAT
+    name: sed_4299_266_disk
+    tap:principal: 0
+  - '@id': '#data.sed_4299_266_disk_no_host_extinction'
+    datatype: float
+    description: sed_4299_266_disk_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_4299_266_disk_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_4299_266_no_host_extinction'
+    datatype: float
+    description: sed_4299_266_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_4299_266_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_4565_283'
+    datatype: float
+    description: sed_4565_283 column
+    mysql:datatype: FLOAT
+    name: sed_4565_283
+    tap:principal: 0
+  - '@id': '#data.sed_4565_283_bulge'
+    datatype: float
+    description: sed_4565_283_bulge column
+    mysql:datatype: FLOAT
+    name: sed_4565_283_bulge
+    tap:principal: 0
+  - '@id': '#data.sed_4565_283_bulge_no_host_extinction'
+    datatype: float
+    description: sed_4565_283_bulge_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_4565_283_bulge_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_4565_283_disk'
+    datatype: float
+    description: sed_4565_283_disk column
+    mysql:datatype: FLOAT
+    name: sed_4565_283_disk
+    tap:principal: 0
+  - '@id': '#data.sed_4565_283_disk_no_host_extinction'
+    datatype: float
+    description: sed_4565_283_disk_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_4565_283_disk_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_4565_283_no_host_extinction'
+    datatype: float
+    description: sed_4565_283_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_4565_283_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_4848_300'
+    datatype: float
+    description: sed_4848_300 column
+    mysql:datatype: FLOAT
+    name: sed_4848_300
+    tap:principal: 0
+  - '@id': '#data.sed_4848_300_bulge'
+    datatype: float
+    description: sed_4848_300_bulge column
+    mysql:datatype: FLOAT
+    name: sed_4848_300_bulge
+    tap:principal: 0
+  - '@id': '#data.sed_4848_300_bulge_no_host_extinction'
+    datatype: float
+    description: sed_4848_300_bulge_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_4848_300_bulge_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_4848_300_disk'
+    datatype: float
+    description: sed_4848_300_disk column
+    mysql:datatype: FLOAT
+    name: sed_4848_300_disk
+    tap:principal: 0
+  - '@id': '#data.sed_4848_300_disk_no_host_extinction'
+    datatype: float
+    description: sed_4848_300_disk_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_4848_300_disk_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_4848_300_no_host_extinction'
+    datatype: float
+    description: sed_4848_300_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_4848_300_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_5148_319'
+    datatype: float
+    description: sed_5148_319 column
+    mysql:datatype: FLOAT
+    name: sed_5148_319
+    tap:principal: 0
+  - '@id': '#data.sed_5148_319_bulge'
+    datatype: float
+    description: sed_5148_319_bulge column
+    mysql:datatype: FLOAT
+    name: sed_5148_319_bulge
+    tap:principal: 0
+  - '@id': '#data.sed_5148_319_bulge_no_host_extinction'
+    datatype: float
+    description: sed_5148_319_bulge_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_5148_319_bulge_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_5148_319_disk'
+    datatype: float
+    description: sed_5148_319_disk column
+    mysql:datatype: FLOAT
+    name: sed_5148_319_disk
+    tap:principal: 0
+  - '@id': '#data.sed_5148_319_disk_no_host_extinction'
+    datatype: float
+    description: sed_5148_319_disk_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_5148_319_disk_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_5148_319_no_host_extinction'
+    datatype: float
+    description: sed_5148_319_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_5148_319_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_5467_339'
+    datatype: float
+    description: sed_5467_339 column
+    mysql:datatype: FLOAT
+    name: sed_5467_339
+    tap:principal: 0
+  - '@id': '#data.sed_5467_339_bulge'
+    datatype: float
+    description: sed_5467_339_bulge column
+    mysql:datatype: FLOAT
+    name: sed_5467_339_bulge
+    tap:principal: 0
+  - '@id': '#data.sed_5467_339_bulge_no_host_extinction'
+    datatype: float
+    description: sed_5467_339_bulge_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_5467_339_bulge_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_5467_339_disk'
+    datatype: float
+    description: sed_5467_339_disk column
+    mysql:datatype: FLOAT
+    name: sed_5467_339_disk
+    tap:principal: 0
+  - '@id': '#data.sed_5467_339_disk_no_host_extinction'
+    datatype: float
+    description: sed_5467_339_disk_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_5467_339_disk_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_5467_339_no_host_extinction'
+    datatype: float
+    description: sed_5467_339_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_5467_339_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_5806_360'
+    datatype: float
+    description: sed_5806_360 column
+    mysql:datatype: FLOAT
+    name: sed_5806_360
+    tap:principal: 0
+  - '@id': '#data.sed_5806_360_bulge'
+    datatype: float
+    description: sed_5806_360_bulge column
+    mysql:datatype: FLOAT
+    name: sed_5806_360_bulge
+    tap:principal: 0
+  - '@id': '#data.sed_5806_360_bulge_no_host_extinction'
+    datatype: float
+    description: sed_5806_360_bulge_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_5806_360_bulge_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_5806_360_disk'
+    datatype: float
+    description: sed_5806_360_disk column
+    mysql:datatype: FLOAT
+    name: sed_5806_360_disk
+    tap:principal: 0
+  - '@id': '#data.sed_5806_360_disk_no_host_extinction'
+    datatype: float
+    description: sed_5806_360_disk_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_5806_360_disk_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_5806_360_no_host_extinction'
+    datatype: float
+    description: sed_5806_360_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_5806_360_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_6166_382'
+    datatype: float
+    description: sed_6166_382 column
+    mysql:datatype: FLOAT
+    name: sed_6166_382
+    tap:principal: 0
+  - '@id': '#data.sed_6166_382_bulge'
+    datatype: float
+    description: sed_6166_382_bulge column
+    mysql:datatype: FLOAT
+    name: sed_6166_382_bulge
+    tap:principal: 0
+  - '@id': '#data.sed_6166_382_bulge_no_host_extinction'
+    datatype: float
+    description: sed_6166_382_bulge_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_6166_382_bulge_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_6166_382_disk'
+    datatype: float
+    description: sed_6166_382_disk column
+    mysql:datatype: FLOAT
+    name: sed_6166_382_disk
+    tap:principal: 0
+  - '@id': '#data.sed_6166_382_disk_no_host_extinction'
+    datatype: float
+    description: sed_6166_382_disk_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_6166_382_disk_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_6166_382_no_host_extinction'
+    datatype: float
+    description: sed_6166_382_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_6166_382_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_6548_406'
+    datatype: float
+    description: sed_6548_406 column
+    mysql:datatype: FLOAT
+    name: sed_6548_406
+    tap:principal: 0
+  - '@id': '#data.sed_6548_406_bulge'
+    datatype: float
+    description: sed_6548_406_bulge column
+    mysql:datatype: FLOAT
+    name: sed_6548_406_bulge
+    tap:principal: 0
+  - '@id': '#data.sed_6548_406_bulge_no_host_extinction'
+    datatype: float
+    description: sed_6548_406_bulge_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_6548_406_bulge_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_6548_406_disk'
+    datatype: float
+    description: sed_6548_406_disk column
+    mysql:datatype: FLOAT
+    name: sed_6548_406_disk
+    tap:principal: 0
+  - '@id': '#data.sed_6548_406_disk_no_host_extinction'
+    datatype: float
+    description: sed_6548_406_disk_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_6548_406_disk_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_6548_406_no_host_extinction'
+    datatype: float
+    description: sed_6548_406_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_6548_406_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_6954_431'
+    datatype: float
+    description: sed_6954_431 column
+    mysql:datatype: FLOAT
+    name: sed_6954_431
+    tap:principal: 0
+  - '@id': '#data.sed_6954_431_bulge'
+    datatype: float
+    description: sed_6954_431_bulge column
+    mysql:datatype: FLOAT
+    name: sed_6954_431_bulge
+    tap:principal: 0
+  - '@id': '#data.sed_6954_431_bulge_no_host_extinction'
+    datatype: float
+    description: sed_6954_431_bulge_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_6954_431_bulge_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_6954_431_disk'
+    datatype: float
+    description: sed_6954_431_disk column
+    mysql:datatype: FLOAT
+    name: sed_6954_431_disk
+    tap:principal: 0
+  - '@id': '#data.sed_6954_431_disk_no_host_extinction'
+    datatype: float
+    description: sed_6954_431_disk_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_6954_431_disk_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_6954_431_no_host_extinction'
+    datatype: float
+    description: sed_6954_431_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_6954_431_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_7385_458'
+    datatype: float
+    description: sed_7385_458 column
+    mysql:datatype: FLOAT
+    name: sed_7385_458
+    tap:principal: 0
+  - '@id': '#data.sed_7385_458_bulge'
+    datatype: float
+    description: sed_7385_458_bulge column
+    mysql:datatype: FLOAT
+    name: sed_7385_458_bulge
+    tap:principal: 0
+  - '@id': '#data.sed_7385_458_bulge_no_host_extinction'
+    datatype: float
+    description: sed_7385_458_bulge_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_7385_458_bulge_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_7385_458_disk'
+    datatype: float
+    description: sed_7385_458_disk column
+    mysql:datatype: FLOAT
+    name: sed_7385_458_disk
+    tap:principal: 0
+  - '@id': '#data.sed_7385_458_disk_no_host_extinction'
+    datatype: float
+    description: sed_7385_458_disk_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_7385_458_disk_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_7385_458_no_host_extinction'
+    datatype: float
+    description: sed_7385_458_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_7385_458_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_7843_486'
+    datatype: float
+    description: sed_7843_486 column
+    mysql:datatype: FLOAT
+    name: sed_7843_486
+    tap:principal: 0
+  - '@id': '#data.sed_7843_486_bulge'
+    datatype: float
+    description: sed_7843_486_bulge column
+    mysql:datatype: FLOAT
+    name: sed_7843_486_bulge
+    tap:principal: 0
+  - '@id': '#data.sed_7843_486_bulge_no_host_extinction'
+    datatype: float
+    description: sed_7843_486_bulge_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_7843_486_bulge_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_7843_486_disk'
+    datatype: float
+    description: sed_7843_486_disk column
+    mysql:datatype: FLOAT
+    name: sed_7843_486_disk
+    tap:principal: 0
+  - '@id': '#data.sed_7843_486_disk_no_host_extinction'
+    datatype: float
+    description: sed_7843_486_disk_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_7843_486_disk_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_7843_486_no_host_extinction'
+    datatype: float
+    description: sed_7843_486_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_7843_486_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_8329_517'
+    datatype: float
+    description: sed_8329_517 column
+    mysql:datatype: FLOAT
+    name: sed_8329_517
+    tap:principal: 0
+  - '@id': '#data.sed_8329_517_bulge'
+    datatype: float
+    description: sed_8329_517_bulge column
+    mysql:datatype: FLOAT
+    name: sed_8329_517_bulge
+    tap:principal: 0
+  - '@id': '#data.sed_8329_517_bulge_no_host_extinction'
+    datatype: float
+    description: sed_8329_517_bulge_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_8329_517_bulge_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_8329_517_disk'
+    datatype: float
+    description: sed_8329_517_disk column
+    mysql:datatype: FLOAT
+    name: sed_8329_517_disk
+    tap:principal: 0
+  - '@id': '#data.sed_8329_517_disk_no_host_extinction'
+    datatype: float
+    description: sed_8329_517_disk_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_8329_517_disk_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_8329_517_no_host_extinction'
+    datatype: float
+    description: sed_8329_517_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_8329_517_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_8846_549'
+    datatype: float
+    description: sed_8846_549 column
+    mysql:datatype: FLOAT
+    name: sed_8846_549
+    tap:principal: 0
+  - '@id': '#data.sed_8846_549_bulge'
+    datatype: float
+    description: sed_8846_549_bulge column
+    mysql:datatype: FLOAT
+    name: sed_8846_549_bulge
+    tap:principal: 0
+  - '@id': '#data.sed_8846_549_bulge_no_host_extinction'
+    datatype: float
+    description: sed_8846_549_bulge_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_8846_549_bulge_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_8846_549_disk'
+    datatype: float
+    description: sed_8846_549_disk column
+    mysql:datatype: FLOAT
+    name: sed_8846_549_disk
+    tap:principal: 0
+  - '@id': '#data.sed_8846_549_disk_no_host_extinction'
+    datatype: float
+    description: sed_8846_549_disk_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_8846_549_disk_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_8846_549_no_host_extinction'
+    datatype: float
+    description: sed_8846_549_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_8846_549_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_9395_583'
+    datatype: float
+    description: sed_9395_583 column
+    mysql:datatype: FLOAT
+    name: sed_9395_583
+    tap:principal: 0
+  - '@id': '#data.sed_9395_583_bulge'
+    datatype: float
+    description: sed_9395_583_bulge column
+    mysql:datatype: FLOAT
+    name: sed_9395_583_bulge
+    tap:principal: 0
+  - '@id': '#data.sed_9395_583_bulge_no_host_extinction'
+    datatype: float
+    description: sed_9395_583_bulge_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_9395_583_bulge_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_9395_583_disk'
+    datatype: float
+    description: sed_9395_583_disk column
+    mysql:datatype: FLOAT
+    name: sed_9395_583_disk
+    tap:principal: 0
+  - '@id': '#data.sed_9395_583_disk_no_host_extinction'
+    datatype: float
+    description: sed_9395_583_disk_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_9395_583_disk_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_9395_583_no_host_extinction'
+    datatype: float
+    description: sed_9395_583_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_9395_583_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_9978_1489'
+    datatype: float
+    description: sed_9978_1489 column
+    mysql:datatype: FLOAT
+    name: sed_9978_1489
+    tap:principal: 0
+  - '@id': '#data.sed_9978_1489_bulge'
+    datatype: float
+    description: sed_9978_1489_bulge column
+    mysql:datatype: FLOAT
+    name: sed_9978_1489_bulge
+    tap:principal: 0
+  - '@id': '#data.sed_9978_1489_bulge_no_host_extinction'
+    datatype: float
+    description: sed_9978_1489_bulge_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_9978_1489_bulge_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_9978_1489_disk'
+    datatype: float
+    description: sed_9978_1489_disk column
+    mysql:datatype: FLOAT
+    name: sed_9978_1489_disk
+    tap:principal: 0
+  - '@id': '#data.sed_9978_1489_disk_no_host_extinction'
+    datatype: float
+    description: sed_9978_1489_disk_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_9978_1489_disk_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sed_9978_1489_no_host_extinction'
+    datatype: float
+    description: sed_9978_1489_no_host_extinction column
+    mysql:datatype: FLOAT
+    name: sed_9978_1489_no_host_extinction
+    tap:principal: 0
+  - '@id': '#data.sersic_bulge'
+    datatype: float
+    description: sersic_bulge column
+    mysql:datatype: FLOAT
+    name: sersic_bulge
+    tap:principal: 0
+  - '@id': '#data.sersic_disk'
+    datatype: float
+    description: sersic_disk column
+    mysql:datatype: FLOAT
+    name: sersic_disk
+    tap:principal: 0
+  - '@id': '#data.shear_1'
+    datatype: double
+    description: shear_1 column
+    mysql:datatype: DOUBLE
+    name: shear_1
+    tap:principal: 0
+  - '@id': '#data.shear_2'
+    datatype: double
+    description: shear_2 column
+    mysql:datatype: DOUBLE
+    name: shear_2
+    tap:principal: 0
+  - '@id': '#data.shear_2_phosim'
+    datatype: double
+    description: shear_2_phosim column
+    mysql:datatype: DOUBLE
+    name: shear_2_phosim
+    tap:principal: 0
+  - '@id': '#data.shear_2_treecorr'
+    datatype: double
+    description: shear_2_treecorr column
+    mysql:datatype: DOUBLE
+    name: shear_2_treecorr
+    tap:principal: 0
+  - '@id': '#data.size_bulge_true'
+    datatype: float
+    description: size_bulge_true column
+    mysql:datatype: FLOAT
+    name: size_bulge_true
+    tap:principal: 0
+  - '@id': '#data.size_disk_true'
+    datatype: float
+    description: size_disk_true column
+    mysql:datatype: FLOAT
+    name: size_disk_true
+    tap:principal: 0
+  - '@id': '#data.size_minor_bulge_true'
+    datatype: float
+    description: size_minor_bulge_true column
+    mysql:datatype: FLOAT
+    name: size_minor_bulge_true
+    tap:principal: 0
+  - '@id': '#data.size_minor_disk_true'
+    datatype: float
+    description: size_minor_disk_true column
+    mysql:datatype: FLOAT
+    name: size_minor_disk_true
+    tap:principal: 0
+  - '@id': '#data.size_minor_true'
+    datatype: float
+    description: size_minor_true column
+    mysql:datatype: FLOAT
+    name: size_minor_true
+    tap:principal: 0
+  - '@id': '#data.size_true'
+    datatype: float
+    description: size_true column
+    mysql:datatype: FLOAT
+    name: size_true
+    tap:principal: 0
+  - '@id': '#data.stellar_mass'
+    datatype: float
+    description: stellar_mass column
+    mysql:datatype: FLOAT
+    name: stellar_mass
+    tap:principal: 0
+  - '@id': '#data.stellar_mass_bulge'
+    datatype: float
+    description: stellar_mass_bulge column
+    mysql:datatype: FLOAT
+    name: stellar_mass_bulge
+    tap:principal: 0
+  - '@id': '#data.stellar_mass_disk'
+    datatype: float
+    description: stellar_mass_disk column
+    mysql:datatype: FLOAT
+    name: stellar_mass_disk
+    tap:principal: 0
+  - '@id': '#data.velocity_x'
+    datatype: double
+    description: velocity_x column
+    mysql:datatype: DOUBLE
+    name: velocity_x
+    tap:principal: 0
+  - '@id': '#data.velocity_y'
+    datatype: double
+    description: velocity_y column
+    mysql:datatype: DOUBLE
+    name: velocity_y
+    tap:principal: 0
+  - '@id': '#data.velocity_z'
+    datatype: double
+    description: velocity_z column
+    mysql:datatype: DOUBLE
+    name: velocity_z
+    tap:principal: 0
+  - '@id': '#data.chunkId'
+    datatype: int
+    description: chunkId column
+    mysql:datatype: int(11)
+    name: chunkId
+    tap:principal: 0
+  - '@id': '#data.subChunkId'
+    datatype: int
+    description: subChunkId column
+    mysql:datatype: int(11)
+    name: subChunkId
+    tap:principal: 0
+  description: data table
+  name: data
+  tap:table_index: 2
+tap:schema_index: 3

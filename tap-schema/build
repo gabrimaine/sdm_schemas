@@ -1,6 +1,6 @@
 #!/bin/bash -ex
 ENVIRONMENT="$1"
-GIT_TAG=`echo $GITHUB_REF | sed -E 's,refs/(heads|tags)/,,' | sed -E 's,/,-,g'`
+GIT_TAG='2.4.0' #`echo $GITHUB_REF | sed -E 's,refs/(heads|tags)/,,' | sed -E 's,/,-,g'`
 shift
 
 ./set_schema_index $@
@@ -14,7 +14,7 @@ do
 done
 
 # Build and push docker images
-docker build . -t gabrimaine/tap-schema-$ENVIRONMENT:$GIT_TAG
+docker   build . -t gabrimaine/tap-schema-$ENVIRONMENT:$GIT_TAG
 docker push gabrimaine/tap-schema-$ENVIRONMENT:$GIT_TAG
 
 # Clean up any untracked files in the sql directory

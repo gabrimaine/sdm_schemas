@@ -2,7 +2,7 @@
 description: Data Preview 0.2 contains the image and catalog products of the Rubin
   Science Pipelines v23 processing of the DESC Data Challenge 2 simulation, which
   covered 300 square degrees of the wide-fast-deep LSST survey region over 5 years.
-name: dp02_dc2_catalogs
+name: dp02_dc2_catalogs_frdf
 tables:
 - '@id': '#Object'
   columns:
@@ -9756,4 +9756,4 @@ tables:
     in arXiv:2101.04855. Includes the noiseless astrometric and photometric parameters.
   name: TruthSummary
   tap:table_index: 10
-tap:schema_index: 1
+tap:schema_index: 0
